@@ -2,26 +2,59 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="./imgs/logo.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sassy Dogs</title>
     <link rel="stylesheet" href="./styles/style.css" type="text/css">
+
 </head>
 
 <body>
-    <header class="header">
-        <a href="/">Logo</a>
+    <header class="header" id="header">
+        <a href="/"><img id="header-img" src="./imgs/logo.png" alt="Logo"></a>
 
-        <nav >
+        <nav class="nav-bar" id="nav-bar">
             <ul class="menu">
-                <li><a href="/">Features</a></li>
-                <li><a href="/">How it Works</a></li>
-                <li><a href="/">Pricing</a></li>
+                <li><a class="nav-link" href="#why-sassy">Why Sassy?</a></li>
+                <li><a class="nav-link" href="#being-sassy">Being Sassy!</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
             </ul>
         </nav>
     </header>
 
+    <h1 class="text-color">Exquisite Sassy Dogs for All</h1>
 
+    <div class="container">
+        <section class="section" id="why-sassy">
+            <h2 class="text-color">Why Sassy?</h2>
+            <div class="text-color flex"><i class="material-icons" style="font-size: 3rem;">pets</i>
+                <p class="text-color">Being sassy is when you get to live the most of your life as a doggo, caring about
+                    nothing and no one. Why live a life of quietude when you can floof the heck out of it?</p>
+            </div>
+            <div class="text-color flex"><i class="material-icons" style="font-size: 3rem;">mood_bad</i>
+                <p class="text-color">Your human do not deserve you. For him, it is an honor to serve you as a valet to
+                    all your doggo needs. And please bring me some more treats, will you Phillip?</p>
+            </div>
+        </section>
+        <section class="text-color" id="being-sassy">
+            <h2 class="text-color">Being Sassy!</h2>
+            <iframe style="border-radius: 5px;" id="video" width="640" height="360" src="https://www.youtube.com/embed/m8PsNPNy1pY" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section class="section" id="pricing">
+            <h2 class="text-color">Sass It Up Right Now!</h2>
+            <p class="text-color">Click right now to discover a new way of living and sass it away!</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" name="email" id="email" placeholder="Enter a valid email address" required>
+                <input type="submit" value="Be Sassy!" class="submit-btn" id="submit">
+            </form>
+        </section>
+    </div>
 </body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>

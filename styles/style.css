@@ -1,40 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Grandstander&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/*
+font-family: 'Architects Daughter', cursive;
+font-family: 'Grandstander', cursive;
+font-family: 'Ranchers', cursive;
+*/
+
 body, ul, li, p {
     margin: 0px;
     padding: 0px;
     list-style: none;
     font-size: 1.2rem;
-    font-family: 'EB Garamond', 'Times New Roman', serif;
+    font-family: 'Grandstander', cursive;
 }
 
 body {
-    background-color: blanchedalmond;
+    background: rgba(159, 226, 248, 0.651);
 }
 
 h1 {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 75px;
+    
+}
+
+h2 {
+    text-align: center;
 }
 
 /* Responsive image*/
 
-img {
+img, iframe {
     max-width: 100%;
     display: block;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .header {
-    background: rgb(41, 16, 41);
+    background: #4cb643;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
     flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    box-shadow: 0 2px 5px gray;
+    position: sticky;
+    top: 0;
 }
 
 .menu {
@@ -45,16 +56,69 @@ a {
     margin-left: 50px;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: #D3F4FF;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.596);
+}
+
 @media (max-width: 520px) {
     .header, .menu {
         flex-direction: column;
         max-width: 100%;
         margin: 0 auto;
     }
-
 }
 
 .menu li a {
     display: block;
     padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Coloca a box no centro */
+    align-items: center;
+    flex-direction: column;
+}
+
+.section {
+    margin: 10px;
+}
+
+.section p {
+    max-width: 800px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+form {
+  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-btn {
+    background-color: khaki;
+    border: none;
+    padding: 5px;
+    margin: 10px 40%;
+    font-family: inherit;
+}
+
+.text-color {
+    color: khaki;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.596);
+}
+
+.flex {
+    display: flex;
+  margin-top: 20px;
+}
+
+input {
+  margin: 0 20%;
 }
